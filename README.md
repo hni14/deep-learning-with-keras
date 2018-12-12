@@ -11,13 +11,28 @@ Kerasを中心に例題の解釈、ハンズオンを通じてディープラー
 ### python
 - Python 2.7-3.6
 
-## パーセプトロン
+## 例題
 
-## コンピュータビジョンの関する例題
+### パーセプトロンに関する例題
+TOBD
+
+### ニューラルネットワークに関する例題
+TOBD
+
+### ニューラルネットワークの学習に関する例題
+TOBD
+
+### 誤差逆伝搬法に関する例題
+TOBD
+
+### コンピュータビジョンの関する例題
 - [mnist_mlp](mnist_mlp/README.md) MNISTデータ・セットで多層パーセプトロンの訓練を行う例。
 - [mnist_cnn](mnist_cnn/README.md) MNISTデータ・セットで畳み込みニューラルネットワークの訓練を行う例。
 
-## 例題出典
+### シーケンスに関する例題
+TOBD
+
+## 出典
 - [keras/examples](https://github.com/keras-team/keras/blob/master/examples/README.md)
 - [ゼロから作る Deep Learning](https://github.com/oreilly-japan/deep-learning-from-scratch)
 
