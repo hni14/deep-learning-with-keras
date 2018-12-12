@@ -28,14 +28,11 @@
   - [Loss functions in neural networks](https://isaacchanghau.github.io/post/loss_functions/)
 - 評価関数
   - [評価関数の利用方法](https://keras.io/ja/metrics/)
-  - []
 - 最適化
   - [オプティマイザ（最適化アルゴリズム）の利用方法](https://keras.io/ja/optimizers/)
   - [勾配降下法の最適化アルゴリズムを概観する](https://postd.cc/optimizing-gradient-descent/)
 - 活性化関数
   - [活性化関数の使い方](https://keras.io/ja/activations/)
-  - [An overview of activation functions used in neural networks]
+  - [An overview of activation functions used in neural networks](https://adl1995.github.io/an-overview-of-activation-functions-used-in-neural-networks.html)
 - 正則化
   - [正則化の利用方法](https://keras.io/ja/regularizers/)
-
-  

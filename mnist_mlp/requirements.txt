@@ -4,3 +4,4 @@ h5py==2.8.0
 pydot==1.4.0
 graphviz==0.10.1
 jupyter==1.0.0
+matplotlib==3.0.2
