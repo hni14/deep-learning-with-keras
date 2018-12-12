@@ -26,8 +26,8 @@ TOBD
 TOBD
 
 ### コンピュータビジョンの関する例題
-- [mnist_mlp](mnist_mlp/README.md) MNISTデータ・セットで多層パーセプトロンの訓練を行う例。
-- [mnist_cnn](mnist_cnn/README.md) MNISTデータ・セットで畳み込みニューラルネットワークの訓練を行う例。
+- [mnist_mlp](mnist_mlp) MNISTデータ・セットで多層パーセプトロンの訓練を行う例。
+- [mnist_cnn](mnist_cnn) MNISTデータ・セットで畳み込みニューラルネットワークの訓練を行う例。
 
 ### シーケンスに関する例題
 TOBD
