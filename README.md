@@ -1,5 +1,5 @@
 # Deep learning with Keras
-[Keras公式が提供する例題](https://github.com/keras-team/keras/blob/master/examples/README.md)の読解を通じてディープラーニングに対する理解を深める。  
+Kerasを中心に例題の解釈、ハンズオンを通じてディープラーニングに対する理解を深める。  
 
 ## システム要件
 
@@ -11,9 +11,15 @@
 ### python
 - Python 2.7-3.6
 
+## パーセプトロン
+
 ## コンピュータビジョンの関する例題
 - [mnist_mlp](mnist_mlp/README.md) MNISTデータ・セットで多層パーセプトロンの訓練を行う例。
 - [mnist_cnn](mnist_cnn/README.md) MNISTデータ・セットで畳み込みニューラルネットワークの訓練を行う例。
+
+## 例題出典
+- [keras/examples](https://github.com/keras-team/keras/blob/master/examples/README.md)
+- [ゼロから作る Deep Learning](https://github.com/oreilly-japan/deep-learning-from-scratch)
 
 ## 参考文献
 - Keras
@@ -22,7 +28,7 @@
 - ディープラーニング
   - 斎藤 康毅 (著): 「ゼロから作るDeep Learning ―Pythonで学ぶディープラーニングの理論と実装」 オライリージャパン 刊
   - 斎藤 康毅 (著): 「ゼロから作るDeep Learning ❷ ―自然言語処理編」 オライリージャパン 刊
-(https://adl1995.github.io/an-overview-of-activation-functions-used-in-neural-networks.html)
+  - (参考予定) Charu C. Aggarwal (著)：「Neural Networks and Deep Learning: A Textbook」 Springer 刊
 - 損失関数
   - [損失関数の利用方法](https://keras.io/ja/losses/)
   - [Loss functions in neural networks](https://isaacchanghau.github.io/post/loss_functions/)
