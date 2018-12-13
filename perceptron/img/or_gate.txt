@@ -1,0 +1,40 @@
+digraph or_gate {
+
+    rankdir=LR
+	splines=line
+        
+    node [fixedsize=true, label=""];
+
+    subgraph cluster_0 {
+		color=white;
+		node [
+			style=solid,
+			color=blue4, 
+			shape=circle
+		];
+		x1 x2;
+		label = "input layer";
+	}
+
+	subgraph cluster_1 {
+		color=white;
+		node [
+			style=solid,
+			color=red2, 
+			shape=circle,
+			height = 1,
+    		width = 1,
+			fontsize = 7,
+		];
+		y;
+		label = "output layer";
+	}
+
+	x1 [label=x1];
+	x2 [label=x2];
+	y [label="y=h(w1x1+w2x2-0.2)\nh(x)=1 if x >= 0 else 0"];
+
+    x1 -> y [ label = "w1=0.5" ];
+    x2 -> y [ label = "w2=0.5" ];
+
+}

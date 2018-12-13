@@ -92,6 +92,3 @@ x_test /= 255
 
 ### エポック
 
-
-## 参考文献 {-}
-[Keras tutorial deep learning in python](https://elitedatascience.com/keras-tutorial-deep-learning-in-python)
