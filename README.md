@@ -16,14 +16,8 @@ Kerasを中心に例題の解釈、ハンズオンを通じてディープラー
 ### パーセプトロンに関する例題
 - [perceptron](perceptron) パーセプトロンで論理回路を作成する例
 
-### ニューラルネットワークに関する例題
-TOBD
-
 ### ニューラルネットワークの学習に関する例題
-TOBD
-
-### 誤差逆伝搬法に関する例題
-TOBD
+- [neural_network](neural_network) 論理回路の訓練を行う例。
 
 ### コンピュータビジョンの関する例題
 - [mnist_mlp](mnist_mlp) MNISTデータ・セットで多層パーセプトロンの訓練を行う例。
@@ -34,7 +28,6 @@ TOBD
 
 ## 出典
 - [keras/examples](https://github.com/keras-team/keras/blob/master/examples/README.md)
-- [ゼロから作る Deep Learning](https://github.com/oreilly-japan/deep-learning-from-scratch)
 
 ## 参考文献
 - Keras
