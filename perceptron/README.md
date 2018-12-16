@@ -207,6 +207,33 @@ def XOR(x1, x2):
 ```
 
 ## Q. パーセプトロンによるADDとMINUSゲートを実装してください。
+足し算、引き算を行う算術演算ゲート
+
+```python
+def ADD(x1, x2):
+    ### 内部パラメータ
+    w1 = ? # x1に対する重み
+    w2 = ? # x2に対する重み
+    bias = ? # バイアス
+    activation = ? # 活性化関数
+
+    ### 演算処理
+    weighted_sum = w1*x1 + w2*x2 # 加重和の計算
+    return activation(weighted_sum + bias)
+```
+
+```python
+def MINUS(x1, x2):
+    ### 内部パラメータ
+    w1 = ? # x1に対する重み
+    w2 = ? # x2に対する重み
+    bias = ? # バイアス
+    activation = ? # 活性化関数
+
+    ### 演算処理
+    weighted_sum = w1*x1 + w2*x2 # 加重和の計算
+    return activation(weighted_sum + bias)
+```
 
 ## 参考
 - [Perceptron: The Artificial Neuron](https://towardsdatascience.com/perceptron-the-artificial-neuron-4d8c70d5cc8d)
