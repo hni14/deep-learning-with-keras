@@ -8,13 +8,12 @@
 - パーセプトロンは重みとバイアスを内部のパラメータとして持つ。
 - パーセプトロンを組み合わせることで、あらゆる計算ができる。
 
-
 ## 単純パーセプトロン
-![単純パーセプトロン](img/perceptron.txt.png)
+![単純パーセプトロン](img/perceptron.dot.png)
 
 
 ### 単純パーセプトロンによるANDゲート
-![ANDゲート](img/and_gate.txt.png)
+![ANDゲート](img/and_gate.dot.png)
 
 ```python
 def AND(x1, x2):
@@ -24,7 +23,7 @@ def AND(x1, x2):
 ```
 
 ### 単純パーセプトロンによるNANDゲート
-![NANDゲート](img/nand_gate.txt.png)
+![NANDゲート](img/nand_gate.dot.png)
 
 ```python
 def NAND(x1, x2):
@@ -34,7 +33,7 @@ def NAND(x1, x2):
 ```
 
 ### 単純パーセプトロンによるORゲート
-![ORゲート](img/or_gate.txt.png)
+![ORゲート](img/or_gate.dot.png)
 
 ```python
 def OR(x1, x2):
@@ -47,8 +46,11 @@ def OR(x1, x2):
 
 ### 多層パーセプトロンによるXORゲート
 
-![XORゲート](img/xor_gate.txt.png)
+![XORゲート](img/xor_gate.dot.png)
 ```python
 def XOR(x1, x2):
     return AND(NAND(x1, x2), OR(x1, x2))
 ```
+
+## 参考
+- [Perceptron Learning Algorithm: A Graphical Explanation of Why It Works](https://towardsdatascience.com/perceptron-learning-algorithm-d5db0deab975)

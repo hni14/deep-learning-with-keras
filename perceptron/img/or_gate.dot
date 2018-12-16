@@ -1,22 +1,24 @@
-digraph and_gate {
+digraph or_gate {
 
     rankdir=LR
 	splines=line
         
     node [fixedsize=true, label=""];
 
-    subgraph cluster_0 {
+    subgraph input_layer {
+		label = "input layer";
 		color=white;
 		node [
 			style=solid,
 			color=blue4, 
 			shape=circle
 		];
-		x1 x2;
-		label = "input layer";
+		x1 [label=x1];
+		x2 [label=x2];
 	}
 
-	subgraph cluster_1 {
+	subgraph output_layer {
+		label = "output layer";
 		color=white;
 		node [
 			style=solid,
@@ -26,13 +28,8 @@ digraph and_gate {
     		width = 1,
 			fontsize = 7,
 		];
-		y;
-		label = "output layer";
+		y [label="y=h(w1x1+w2x2-0.2)\nh(x)=1 if x >= 0 else 0"];
 	}
-
-	x1 [label=x1];
-	x2 [label=x2];
-	y [label="y=h(w1x1+w2x2+ -0.7)\nh(x)=1 if x >= 0 else 0"];
 
     x1 -> y [ label = "w1=0.5" ];
     x2 -> y [ label = "w2=0.5" ];
