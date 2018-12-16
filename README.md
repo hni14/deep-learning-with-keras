@@ -26,6 +26,12 @@ Kerasを中心に例題の解釈、ハンズオンを通じてディープラー
 ### シーケンスに関する例題
 TOBD
 
+### おすすめの読み方
+1. [perceptron](perceptron) パーセプトロンで論理回路を作成する例
+2. [neural_network](neural_network) 論理回路の訓練を行う例。
+3. [mnist_mlp](mnist_mlp) MNISTデータ・セットで多層パーセプトロンの訓練を行う例。
+4. [mnist_cnn](mnist_cnn) MNISTデータ・セットで畳み込みニューラルネットワークの訓練を行う例。
+
 ## 出典
 - [keras/examples](https://github.com/keras-team/keras/blob/master/examples/README.md)
 

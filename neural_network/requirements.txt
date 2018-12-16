@@ -1,0 +1,6 @@
+keras==2.2.4
+tensorflow==1.12.0
+h5py==2.8.0
+pydot==1.4.0
+graphviz==0.10.1
+jupyter==1.0.0
