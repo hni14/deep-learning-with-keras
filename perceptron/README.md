@@ -17,9 +17,8 @@
 ## パーセプトロン
 パーセプトロンとは、複数の入力を受け取り、1つの出力を出すアルゴリズムであり、そのアルゴリズムは関数として実装することができます。  
 数式で表現すると以下のようになります。  
-```math
-y=h(\sum_{i=1}^{n} w_i*x_i+b)
-```
+
+<img src="https://latex.codecogs.com/gif.latex?y&space;=&space;h(\sum_{i=0}^{n}w_i*x_i+b)"/>
 
 わかりにくいので、下記に、２つの入力を持つパーセプトロンを図と擬似コードで表現してみます。  
 
@@ -178,8 +177,6 @@ def OR(x1, x2):
     return activation(weighted_sum + bias)
 ```
 
-### Q. パーセプトロンによるADDとMINUSゲートを実装してください。
-
 ### 多層パーセプトロンによるXORゲート
 パーセプトロンでは、XORは実装できません。  
 正確に言うと、単一のパーセプトロンだけでは実現できません。  
@@ -209,6 +206,7 @@ def XOR(x1, x2):
     return AND(NAND(x1, x2), OR(x1, x2))
 ```
 
+## Q. パーセプトロンによるADDとMINUSゲートを実装してください。
+
 ## 参考
 - [Perceptron: The Artificial Neuron](https://towardsdatascience.com/perceptron-the-artificial-neuron-4d8c70d5cc8d)
-- [Perceptron Learning Algorithm: A Graphical Explanation of Why It Works](https://towardsdatascience.com/perceptron-learning-algorithm-d5db0deab975)
