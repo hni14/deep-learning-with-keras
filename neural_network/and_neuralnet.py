@@ -15,15 +15,14 @@ y_test = y_train
 model = Sequential()
 model.add(Dense(units=1, 
                 input_dim=2, 
-                kernel_initializer='random_uniform',
-                bias_initializer='zeros',
                 activation='sigmoid'))
 
 # 定義したニューラルネットワークに、学習のための機構を組み合わせる。
 # 損失関数: 訓練データでのネットワークの性能を評価し、ネットワークの重みをどの方向に更新するか決める。
 # オプティマイザ：与えられたデータと損失関数に基づいてネットワークが自身の重みを更新する方法
 # メトリックス： 訓練とテストを監視するための評価指標
-model.compile(loss='binary_crossentropy',
+#model.compile(loss='binary_crossentropy',
+model.compile(loss='mean_squared_error',
               optimizer=SGD(lr=0.1),
               metrics=['binary_accuracy'])
 
