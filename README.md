@@ -18,9 +18,10 @@ Kerasを中心に例題の解釈、ハンズオンを通じてディープラー
 
 ### ニューラルネットワークの学習に関する例題
 - [neural_network](neural_network) 論理回路の訓練を行う例。
+- [工事中] [optimizer](optimizer) 最適化手法を実装する例。
 
 ### コンピュータビジョンの関する例題
-- [工事中] [mnist_mlp](mnist_mlp) MNISTデータ・セットで多層パーセプトロンの訓練を行う例。
+- [mnist_mlp](mnist_mlp) MNISTデータ・セットで多層パーセプトロンの訓練を行う例。
 - [工事中] [mnist_cnn](mnist_cnn) MNISTデータ・セットで畳み込みニューラルネットワークの訓練を行う例。
 
 ### シーケンスに関する例題
