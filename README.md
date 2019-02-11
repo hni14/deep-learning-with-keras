@@ -13,25 +13,28 @@ Kerasを中心に例題の解釈、ハンズオンを通じてディープラー
 
 ## 例題
 
-### パーセプトロンに関する例題
-- [perceptron](perceptron) パーセプトロンで論理回路を作成する例
+### ニューラルネットワークに関する例題
+- [perceptron](perceptron) パーセプトロンで論理回路を作成する。
+- [neural_network](neural_network) ニューラルネットワークを設計する。
 
 ### ニューラルネットワークの学習に関する例題
-- [neural_network](neural_network) 論理回路の訓練を行う例。
-- [工事中] [optimizer](optimizer) 最適化手法を実装する例。
+- [fitting](fitting) 論理回路の訓練を行う。
+- [optimizer](optimizer) 最適化手法を実装する。
 
 ### コンピュータビジョンの関する例題
-- [mnist_mlp](mnist_mlp) MNISTデータ・セットで多層パーセプトロンの訓練を行う例。
-- [工事中] [mnist_cnn](mnist_cnn) MNISTデータ・セットで畳み込みニューラルネットワークの訓練を行う例。
+- [mnist_mlp](mnist_mlp) MNISTデータ・セットで全結合ニューラルネットワークの訓練を行う。
+- [工事中] [mnist_cnn](mnist_cnn) MNISTデータ・セットで畳み込みニューラルネットワークの訓練を行う。
 
 ### シーケンスに関する例題
 TOBD
 
 ### おすすめの読み方
-1. [perceptron](perceptron) パーセプトロンで論理回路を作成する例
-2. [neural_network](neural_network) 論理回路の訓練を行う例。
-3. [mnist_mlp](mnist_mlp) MNISTデータ・セットで多層パーセプトロンの訓練を行う例。
-4. [mnist_cnn](mnist_cnn) MNISTデータ・セットで畳み込みニューラルネットワークの訓練を行う例。
+1. [perceptron](perceptron) パーセプトロンで論理回路を作成する。
+2. [neural_network](neural_network) ニューラルネットワークを設計する。
+3. [fitting](fitting) 論理回路の訓練を行う。
+4. [optimizer](optimizer) 最適化手法を実装する。
+5. [mnist_mlp](mnist_mlp) MNISTデータ・セットで全結合ニューラルネットワークの訓練を行う。
+6. [工事中][mnist_cnn](mnist_cnn) MNISTデータ・セットで畳み込みニューラルネットワークの訓練を行う。
 
 ## 出典
 - [keras/examples](https://github.com/keras-team/keras/blob/master/examples/README.md)
@@ -43,7 +46,7 @@ TOBD
 - ディープラーニング
   - 斎藤 康毅 (著): 「ゼロから作るDeep Learning ―Pythonで学ぶディープラーニングの理論と実装」 オライリージャパン 刊
   - 斎藤 康毅 (著): 「ゼロから作るDeep Learning ❷ ―自然言語処理編」 オライリージャパン 刊
-  - (参考予定) Charu C. Aggarwal (著)：「Neural Networks and Deep Learning: A Textbook」 Springer 刊
+  - Charu C. Aggarwal (著)：「Neural Networks and Deep Learning: A Textbook」 Springer 刊
 - 損失関数
   - [損失関数の利用方法](https://keras.io/ja/losses/)
   - [Loss functions in neural networks](https://isaacchanghau.github.io/post/loss_functions/)
