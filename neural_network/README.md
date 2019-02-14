@@ -134,7 +134,27 @@ yは0か1の値しかとらず、4つすべての入力パターンを2値に分
 | 0  | 1  | 1 |
 | 1  | 1  | 0 |
 
-### ニューラルネットワークでは、ステップ関数を活性化関数として使用できない
+### XORゲートをKerasで書いてみる
+```python
+from keras.models import Sequential
+from keras.layers.core import Dense, Activation
+
+# XORゲートの2層ネットワークの定義
+model = Sequential()
+# 入力層および隠れ層
+model.add(Dense(input_dim=2,                # 入力層のノード数
+                units=2,                    # 隠れ層のノード数
+                kernel_initializer='zeros', # 隠れ層の重み初期値
+                bias_initializer='zeros',   # 隠れ層のバイアス初期値
+                activation='sigmoid'))      # 隠れ層の活性化関数
+# 出力層
+model.add(Dense(units=1,                    # 出力層のノード数
+                kernel_initializer='zeros', # 出力層の重み初期値
+                bias_initializer='zeros',   # 出力層のバイアス初期値
+                activation='sigmoid'))      # 出力層の活性化関数
+```
+
+##### ニューラルネットワークでは、ステップ関数を活性化関数として使用できない
 ニューラルネットワークを訓練するには、損失関数の値を減らすような方法で入力に対する重みを調整します。  
 勾配降下法においては、損失関数の値を減らすために、損失関数の値の勾配を計算し、損失関数が減少する方向にすこしずつ重みを変更していきます。  
 ステップ関数は勾配を持たない関数です。  

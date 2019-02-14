@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 from keras.models import Sequential
 from keras.layers.core import Dense, Activation
 from keras.optimizers import SGD
@@ -13,9 +14,9 @@ y_test = y_train
 
 # ニューラルネットワークの定義
 model = Sequential()
-model.add(Dense(units=16, 
+model.add(Dense(units=2, 
                 input_dim=2, 
-                activation='relu'))
+                activation='sigmoid'))
 model.add(Dense(1, activation='sigmoid'))
 
 # 定義したニューラルネットワークに、学習のための機構を組み合わせる。
@@ -24,7 +25,7 @@ model.add(Dense(1, activation='sigmoid'))
 # メトリックス： 訓練とテストを監視するための評価指標
 #model.compile(loss='binary_crossentropy',
 model.compile(loss='mean_squared_error',
-              optimizer=SGD(lr=0.1),
+              optimizer=SGD(lr=3.0),
               metrics=['binary_accuracy'])
 
 # モデルの訓練
@@ -44,3 +45,6 @@ for layer in model.layers:
     print('Weights:', np.array(layer.get_weights()[0]).flatten())
     print('Biases:', layer.get_weights()[1])
 
+# 実行
+y_pred = model.predict(x_train)
+print('x1  x2  y:\n', np.hstack((x_train, y_pred)))

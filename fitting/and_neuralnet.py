@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 from keras.models import Sequential
 from keras.layers.core import Dense, Activation
 from keras.optimizers import SGD
@@ -43,3 +44,6 @@ for layer in model.layers:
     print('Weights:', np.array(layer.get_weights()[0]).flatten())
     print('Biases:', layer.get_weights()[1])
 
+# 実行
+y_pred = model.predict(x_train)
+print('x1  x2  y:\n', np.hstack((x_train, y_pred)))
