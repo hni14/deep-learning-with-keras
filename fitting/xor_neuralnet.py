@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 from keras.models import Sequential
 from keras.layers.core import Dense, Activation
-from keras.optimizers import SGD
+from keras.optimizers import Adam
 import numpy as np 
 
 # 訓練データ
@@ -12,21 +12,26 @@ y_train = np.array([0,1,1,0])
 x_test = x_train
 y_test = y_train
 
-# ニューラルネットワークの定義
+# XORゲートの2層ネットワークの定義
 model = Sequential()
-model.add(Dense(units=2, 
-                input_dim=2, 
-                activation='sigmoid'))
-model.add(Dense(1, activation='sigmoid'))
+
+# 入力層および隠れ層
+model.add(Dense(input_dim=2,                       # 入力層のノード数
+                units=2,                           # 隠れ層のノード数
+                kernel_initializer='he_normal',    # 隠れ層の重み初期値
+                bias_initializer='he_normal',      # 隠れ層のバイアス初期値
+                activation='sigmoid'))             # 隠れ層の活性化関数
+
+# 出力層
+model.add(Dense(units=1,                           # 出力層のノード数
+                kernel_initializer='he_normal',    # 出力層の重み初期値
+                bias_initializer='he_normal',      # 出力層のバイアス初期値
+                activation='sigmoid'))             # 出力層の活性化関数
 
 # 定義したニューラルネットワークに、学習のための機構を組み合わせる。
-# 損失関数: 訓練データでのネットワークの性能を評価し、ネットワークの重みをどの方向に更新するか決める。
-# オプティマイザ：与えられたデータと損失関数に基づいてネットワークが自身の重みを更新する方法
-# メトリックス： 訓練とテストを監視するための評価指標
-#model.compile(loss='binary_crossentropy',
-model.compile(loss='mean_squared_error',
-              optimizer=SGD(lr=3.0),
-              metrics=['binary_accuracy'])
+model.compile(loss='mean_squared_error',           # 損失関数：訓練データでのネットワークの性能を評価し、ネットワークの重みをどの方向に更新するか決める。
+              optimizer=Adam(lr=0.1),              # オプティマイザ：与えられたデータと損失関数に基づいてネットワークが自身の重みを更新する方法
+              metrics=['binary_accuracy'])         # メトリックス：訓練とテストを監視するための評価指標
 
 # モデルの訓練
 history = model.fit(x_train, y_train,
